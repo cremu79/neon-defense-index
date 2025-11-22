@@ -1,4 +1,4 @@
-// vercel.json
+// vercel.json (수정할 부분)
 {
   "headers": [
     {
@@ -6,7 +6,7 @@
       "headers": [
         {
           "key": "Content-Security-Policy",
-          // 'data:' 대신 data: 만 사용하도록 수정
+          // 'data:' 또는 **data:** 대신 순수한 data: 로 수정
           "value": "default-src 'self'; font-src 'self' https://fonts.gstatic.com **data:**;"
         }
       ]
