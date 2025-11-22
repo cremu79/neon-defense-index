@@ -1,4 +1,4 @@
-// vercel.json
+// vercel.json (모든 지시어를 한 줄의 문자열에 포함)
 {
   "headers": [
     {
@@ -6,7 +6,7 @@
       "headers": [
         {
           "key": "Content-Security-Policy",
-          "value": "default-src 'self'; font-src 'self' https://fonts.gstatic.com **data:**;"
+          "value": "default-src 'self'; font-src 'self' https://fonts.gstatic.com data:; script-src 'self' 'unsafe-eval'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;"
         }
       ]
     }
