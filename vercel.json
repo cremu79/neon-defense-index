@@ -1,4 +1,4 @@
-// vercel.json 예시 (폰트 관련 부분만)
+// vercel.json
 {
   "headers": [
     {
@@ -6,9 +6,12 @@
       "headers": [
         {
           "key": "Content-Security-Policy",
+          "value": "default-src 'self'; font-src 'self' https://fonts.gstatic.com **data:**;"
+          // 이 줄을 아래와 같이 수정하세요:
+          // value: "default-src 'self'; font-src 'self' https://fonts.gstatic.com data:;" 
+          
+          /* 최종 수정된 모습: */
           "value": "default-src 'self'; font-src 'self' https://fonts.gstatic.com **data:**;" 
-          // 'data:' 대신 data: 를 사용해 보세요.
-          // 또는 기존 규칙에 data: 가 이미 포함되어 있다면, 혹시 다른 CSP 규칙이 오버라이드 되었는지 확인하세요.
         }
       ]
     }
