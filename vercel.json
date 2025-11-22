@@ -6,12 +6,8 @@
       "headers": [
         {
           "key": "Content-Security-Policy",
+          // 'data:' 대신 data: 만 사용하도록 수정
           "value": "default-src 'self'; font-src 'self' https://fonts.gstatic.com **data:**;"
-          // 이 줄을 아래와 같이 수정하세요:
-          // value: "default-src 'self'; font-src 'self' https://fonts.gstatic.com data:;" 
-          
-          /* 최종 수정된 모습: */
-          "value": "default-src 'self'; font-src 'self' https://fonts.gstatic.com **data:**;" 
         }
       ]
     }
